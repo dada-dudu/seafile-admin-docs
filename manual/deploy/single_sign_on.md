@@ -1,16 +1,26 @@
-# Single Sign On support in Seafile
+# Single Sign-On
 
-Seafile supports most of the popular single-sign-on authentication protocols. Some are included in Community Edition, some are only in Pro Edition.
+Seafile Server Community Edition as well as Seafile Server Professional Edition support single sign-on (SSO) authentication protocols. Seafile Server Professional Edition supports most of the popular protocols.
 
-In the Community Edition:
+Both editions also support SSO authentication in the Seafile Add-in for Outlook.
+
+## SSO support in Community Edition
+
+The Community Edition supports the following SSO protocols:
 
 * [Shibboleth](./shibboleth_config_v6.3.md)
 * [OAuth](./oauth.md)
 * [Remote User (Proxy Server)](./remote_user.md)
 
-Kerberos authentication can be integrated by using Apache as a proxy server and follow the instructions in [Remote User Authentication](./remote_user.md).
+Kerberos authentication can be integrated by using Apache as a proxy server. Follow the instructions in [Remote User Authentication](./remote_user.md).
 
-In Pro Edition:
+## SSO support in Professional Edition
+
+The Professional Edition supports the following SSO protocols in addition those supported by the Community Edition:
 
 * [ADFS or SAML 2.0](../deploy_pro/adfs.md)
-* [CAS](../deploy_pro/cas.md)
+* [CAS](../deploy_pro/cas.md) (deprecated)
+
+## SSO authentication with the Seafile Add-in for Outlook
+
+The Seafile Add-in for Outlook can use the SSO protocol configured on the Seafile Server it connects to, provided some extra configuration has been done.
